@@ -2,16 +2,16 @@
 
 **Table of Contents**
 
-* [Basic Concept](http://doc.machbase.com/introduction$Basic Concept)
-* [Appearance of New Data](http://doc.machbase.com/introduction$Appearance of New Data)
+* [Basic Concept](#basic-concept)
+* [Appearance of New Data](#appearance-of-new-data)
 * [Format of Machine Data](#format-of-machine-data)
 
-### Basic Concept
+### Basic Concept {#basic-concept}
 
-Machbase is a time series database which not only stores massive "Machine Data" in real-time generated from various environments but also performs real-time data analysis.   
-Machine data are the time serial log data generated from IoT devices including servers, network devices and applications which are releasing non-stop and real-time data on their status. 
+Machbase is a time series database which not only stores massive "Machine Data" in real-time generated from various environments but also performs real-time data analysis.  
+Machine data are the time serial log data generated from IoT devices including servers, network devices and applications which are releasing non-stop and real-time data on their status.
 
-### Appearance of New Data
+### Appearance of New Data {#appearance-of-new-data}
 
 In the IT industry, the wired and wireless communications based IoT \(Internet of Things\) has become a new wave of innovation, and a massive amount of data is being accumulated through it. Thus, if we could analyze the data in real-time, we will be able to point out the problems of the past, and even prevent future challenges.
 
