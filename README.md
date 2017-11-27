@@ -1,4 +1,4 @@
-# ​Quick Start
+# ​Quick Start {#quick-start}
 
 Machbase is the fastest time series DBMS for IoT & BigData. With Machbase, you can load 1 million data and retrieve them with SQL in a few seconds.
 
@@ -49,11 +49,9 @@ If it is installed, it automatically tries to execute Machbase.
 
 [Install from deb packages](http://doc.machbase.com/quick-start#)for detailed information. To download the package and install, run the commands below.
 
-`wget `[`http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.deb`](http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.deb)
+`wget`[`http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.deb`](http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.deb)
 
 `sudo dpkg -i machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.deb`
 
 If it is installed,Machbaseare automatically executed.
-
-
 
