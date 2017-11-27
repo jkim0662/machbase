@@ -1,24 +1,27 @@
-# ​Quick Start
+​Quick Start
+
+  
 
 
+Machbase is the fastest time seriesDBMSforIoT&BigData. WithMachbase, you can load 1 million data and retrieve them with SQL in a few seconds. 
 
-Machbase is the fastest time series DBMS for IoT & BigData. With Machbase, you can load 1 million data and retrieve them with SQL in a few seconds. 
+Here is how to installMachbase, insert and retrieve data.
 
-Here is how to install Machbase, insert and retrieve data.
-
+  
 
 
 **List of Contents**
 
 * [Setup System Environment](http://doc.machbase.com/quick-start#Setup System Environment)
 * [Package Installation](http://doc.machbase.com/quick-start#Package Installation)
+
 * [Insert Data    ](http://doc.machbase.com/quick-start#Insert Data)
 * [Retrieve Data](http://doc.machbase.com/quick-start#Select Data)
 
   
 
 
-### ![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Set-up System Environment
+![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Set-up System Environment
 
   
 
@@ -32,7 +35,11 @@ If you want to remove the limits manually, refer to[Operating System Settings]
 
 The predefined shell file is ready for quick installation. Simply run the shell file below and then, it will automatically set your system.
 
-`curl http://www.machbase.com/dist/reduce_limit.sh | sudo sh`
+curl http://www.machbase.com/dist/reduce\_limit.sh \| 
+
+sudo
+
+ sh
 
   
 
@@ -41,15 +48,19 @@ When you issue the command above, it modifies "/cd .etc/security/limits.conf" fi
 
 If it cannot stop with CTRL+C within 30 seconds, the reboot process will start. The settings of limitation will be applied after the reboot.
 
-`ulimit -Sn`
+ulimit
+
+ -Sn
 
   
+
+
 You can check values of limitation by running the command above.
 
   
 
 
-### ![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Package Installation
+![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Package Installation
 
   
 
@@ -61,23 +72,30 @@ Machbasesupports RPM forCentOS,Redhatand DEB for Debianlinux. Instructions and d
   
 
 
-#### ![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Installing RPM
+![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Installing RPM
 
   
 
 
 [Install from rpm packages](http://doc.machbase.com/quick-start#)for detailed information. To download the package and install, run the commands below.
 
-`wget  http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.rpm`
+wget
 
-`sudo  yum install machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.rpm`
-
-If it is installed, it automatically tries to execute Machbase.
+ http://www.machbase.com/dist/machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.rpm
 
   
 
 
-#### ![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Installing DEB
+sudo
+
+ yum install machbase-std-3.5.0.826b8f2.official-LINUX-X86-64-release.rpm
+
+If it is installed, it automatically tries to executeMachbase.
+
+  
+
+
+![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "Anchor")Installing DEB
 
   
 
@@ -468,17 +486,25 @@ HH24
 Machbase
  Data Import/Export Utility.
      Release Version 3.5.0.826b8f2.official
-     Copyright 2014, InfiniFlux Corporation or its subsidiaries.
+     Copyright 2014, 
+InfiniFlux
+ Corporation or its subsidiaries.
      All Rights Reserved.
 -----------------------------------------------------------------
-NLS            : US7ASCII            EXECUTE MODE   : IMPORT
+
+NLS
+            : 
+US7ASCII
+            EXECUTE MODE   : IMPORT
 TARGET TABLE   : sample_data
 DATA FILE      : sample_data.csv
 IMPORT_MODE    : APPEND              FILED TERM     : ,
 ROW TERM       : \n                  ENCLOSURE      : "
 ARRIVAL_TIME   : FALSE               ENCODING       : NONE
 HEADER         : FALSE               CREATE TABLE   : FALSE
-                                  1000000 records imported,    0 errors occured
+                                  1000000 records imported,    0 errors 
+occured
+
 Import time         :  0 hour  0 min  2.44 sec
 Load success count  : 1000000
 Load fail count     : 0
@@ -521,7 +547,9 @@ localhost
 Machbase
  Client Query Utility
      Release Version 3.5.0.826b8f2.official
-     Copyright 2014, InfiniFlux Corporation or its subsidiaries.
+     Copyright 2014, 
+InfiniFlux
+ Corporation or its subsidiaries.
      All Rights Reserved.
 =================================================================
  
@@ -559,8 +587,23 @@ When you execute the command below, too many results are displayed.  Here we a
 
 Mach
 >
- SELECT SRCIP, DSTIP, COUNT(*) as COUNT, SUM(EVENTSIZE) as SUM, AVG(EVENTSIZE) as AVG FROM SAMPLE_DATA GROUP BY SRCIP, DSTIP ORDER BY SUM DESC LIMIT 10;
- SRCIP           DSTIP           COUNT                SUM                  AVG
+ SELECT 
+SRCIP
+, 
+DSTIP
+, COUNT(*) as COUNT, SUM(
+EVENTSIZE
+) as SUM, AVG(
+EVENTSIZE
+) as AVG FROM SAMPLE_DATA GROUP BY 
+SRCIP
+, 
+DSTIP
+ ORDER BY SUM DESC LIMIT 10;
+ 
+SRCIP
+DSTIP
+           COUNT                SUM                  AVG
  ------------------------------------------------------------------------------------------------------------
  86.45.186.17    121.67.24.216   205                  2598899              12677.6
  96.128.212.177  16.0.123.104    190                  2541955              13378.7
